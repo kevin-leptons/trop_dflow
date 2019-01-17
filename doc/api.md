@@ -1,7 +1,7 @@
 # DataFlow
 
 ```js
-const DataFlow = require('@trop/dflow')
+const {DataFlow} = require('@trop/dflow')
 ```
 
 ## constructor(dirs)
