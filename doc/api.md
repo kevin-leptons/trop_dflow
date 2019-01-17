@@ -1,5 +1,9 @@
 # DataFlow
 
+```js
+const DataFlow = require('@trop/dflow')
+```
+
 ## constructor(dirs)
 
 * `dirs` / `Array<string>`. Path to schema directory.
