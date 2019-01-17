@@ -1,4 +1,4 @@
-# DataFlow
+# class DataFlow
 
 ```js
 const {DataFlow} = require('@trop/dflow')
