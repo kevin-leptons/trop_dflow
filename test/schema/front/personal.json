@@ -1,0 +1,11 @@
+{
+    "$id": "//trop/front/personal",
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["name", "gender", "age"],
+    "properties": {
+        "name": {"$ref": "//trop/atom/name"},
+        "gender": {"$ref": "//trop/atom/gender"},
+        "age": {"$ref": "//trop/atom/age"}
+    }
+}

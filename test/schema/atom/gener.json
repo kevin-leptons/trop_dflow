@@ -1,0 +1,4 @@
+{
+    "$id": "//trop/atom/gender",
+    "enum": ["male", "female"]
+}
