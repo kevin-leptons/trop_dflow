@@ -7,9 +7,10 @@ describe('class DataFlow', () => {
     flow = null
 
     it('constructor()', () => {
-        let schema_dir = path.join(__dirname, 'schema')
+        let schema_dir1 = path.join(__dirname, 'schema1')
+        let schema_dir2 = path.join(__dirname, 'schema2')
 
-        flow = new DataFlow(schema_dir)
+        flow = new DataFlow([schema_dir1, schema_dir2])
     })
 
     it('constructor() => error:directory', () => {
@@ -39,5 +40,18 @@ describe('class DataFlow', () => {
         assert.throws(() => {
             flow.verify('//trop/front/does_not_exist', null)
         }, SchemaNameError)
+    })
+
+    it('verify(hero)', () => {
+        flow.verify('//trop/hero', {
+            name: 'hulk',
+            strength: 69
+        })
+    })
+
+    it('verify(hero) => error:Array', () => {
+        assert.throws(() => {
+            flow.verify('//trop/hero', null)
+        }, Array)
     })
 })

@@ -1,0 +1,12 @@
+{
+    "$id": "//trop/hero",
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["name", "strength"],
+    "properties": {
+        "name": {"$ref": "//trop/atom/name"},
+        "strength": {
+            "type": "integer"
+        }
+    }
+}

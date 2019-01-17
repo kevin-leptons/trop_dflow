@@ -1,8 +1,8 @@
 # DataFlow
 
-## constructor(dir)
+## constructor(dirs)
 
-* `dir` / `string`. Path to schema directory.
+* `dirs` / `Array<string>`. Path to schema directory.
 
 ## verify(id, item)
 

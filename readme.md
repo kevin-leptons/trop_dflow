@@ -13,7 +13,7 @@ Data Modeling Tool - Make designing, standardize and verify data simple.
 ```js
 const {DataFlow} = require('@trop/dflow')
 
-let flow = new DataFlow('schema/')
+let flow = new DataFlow(['schema/'])
 
 flow.verify('//org/hero', {
     name: 'hulk',
