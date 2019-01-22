@@ -6,9 +6,18 @@ const {DataFlow} = require('@trop/dflow')
 
 ## constructor(dirs)
 
-* `dirs` / `Array<string>`. Path to schema directory.
+**input**
 
-## verify(id, item)
+* `dirs` / `Array<string>`. List of path to schema directories.
+
+## verify(id, data)
+
+**input**
 
 * `name` / `string`. Identity of schema, follow `$id` in JSON Schema.
 * `item` / `any`. Data item to verify.
+
+**output**
+
+* `undefined` on valid data
+* `Array<Object>` on invalid data

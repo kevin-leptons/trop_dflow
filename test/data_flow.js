@@ -22,11 +22,12 @@ describe('class DataFlow', () => {
     })
 
     it('verify(personal)', () => {
-        flow.verify('//trop/front/personal', {
+        let e = flow.verify('//trop/front/personal', {
             name: 'kevin',
             age: 18,
             gender: 'male'
         })
+        assert.equal(e, undefined)
     })
 
     it('verify(invalid_name, invalid_age) => error', () => {
@@ -45,14 +46,16 @@ describe('class DataFlow', () => {
     })
 
     it('verify(hero)', () => {
-        flow.verify('//trop/hero', {
+        let e = flow.verify('//trop/hero', {
             name: 'hulk',
             strength: 69
         })
+        assert.equal(e, undefined)
     })
 
     it('verify(hero by null) => error', () => {
         let e = flow.verify('//trop/hero', null)
+
         assert(e instanceof Array)
         assert(e.length > 0)
     })
