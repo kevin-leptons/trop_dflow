@@ -1,7 +1,7 @@
 const path = require('path')
 const assert = require('assert')
 
-const {DataFlow, SchemaNameError} = require('../lib')
+const {DataFlow, IdentityError, DataError} = require('../lib')
 
 describe('class DataFlow', () => {
     flow = null
@@ -13,10 +13,12 @@ describe('class DataFlow', () => {
         flow = new DataFlow([schema_dir1, schema_dir2])
     })
 
-    it('constructor() => error:directory', () => {
+    it('constructor(directory does not exist) => Error, code=ENOENT', () => {
         assert.throws(() => {
-            new DataFlow('path/to/not/exist/directory')
-        }, Error)
+            new DataFlow(['path/to/not/exist/directory'])
+        }, {
+            code: 'ENOENT'
+        })
     })
 
     it('verify(personal)', () => {
@@ -27,19 +29,19 @@ describe('class DataFlow', () => {
         })
     })
 
-    it('verify(personal) => error:Array', () => {
-        assert.throws(() => {
-            flow.verify('//trop/front/personal', {
-                name: 100,
-                age: 'kevin'
-            })
-        }, Array)
+    it('verify(invalid_name, invalid_age) => error', () => {
+        let e = flow.verify('//trop/front/personal', {
+            name: 100,
+            age: 'kevin'
+        })
+        assert(e instanceof Array)
+        assert(e.length > 0)
     })
 
-    it('verify(personal) => error:SchemaNameError', () => {
+    it('verify(does not exist schema) => IdentityError', () => {
         assert.throws(() => {
             flow.verify('//trop/front/does_not_exist', null)
-        }, SchemaNameError)
+        }, IdentityError)
     })
 
     it('verify(hero)', () => {
@@ -49,9 +51,9 @@ describe('class DataFlow', () => {
         })
     })
 
-    it('verify(hero) => error:Array', () => {
-        assert.throws(() => {
-            flow.verify('//trop/hero', null)
-        }, Array)
+    it('verify(hero by null) => error', () => {
+        let e = flow.verify('//trop/hero', null)
+        assert(e instanceof Array)
+        assert(e.length > 0)
     })
 })

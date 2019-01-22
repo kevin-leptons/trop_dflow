@@ -1,0 +1,10 @@
+{
+    "$id": "//org/hero",
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["name", "strength"],
+    "properties": {
+        "name": {"$ref": "//org/name"},
+        "strength": {"$ref": "//org/uint"}
+    }
+}

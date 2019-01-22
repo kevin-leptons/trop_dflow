@@ -1,35 +1,84 @@
 # dflow
 
-Data Modeling Tool - Make designing, standardize and verify data simple.
+Data Modeling Tool - Design, re-use schemas and verify data
 
 # Features
 
-* Specify schemas by JSON Schema.
-* Load schemas from directory, recursive.
-* Verify data by schema.
+* Specify schemas by JSON Schema Syntax
+* Re-use schemas by keyword pair `$id` - `$ref`
+* Load schemas from directories, recursive.
+* Verify data by schema identity.
 
 # Usage
 
-```js
-const {DataFlow} = require('@trop/dflow')
+**Step 1. Design Basic Schemas**
 
-let flow = new DataFlow(['schema/'])
+File `schema/name.json` - classical name
 
-flow.verify('//org/hero', {
-    name: 'hulk',
-    strength: 69,
-    weapon: 'hands'
-})
+```json
+{
+    "$id": "//org/name",
+    "type": "type",
+    "pattern": "^[a-zA-Z0-9 ]+$"
+}
 ```
 
-* `schema/`, path to directory contains schema files.
-* `//org/personal`, the first argument is identity of schema.
-* `{...}`, the second argument is data to be verify.
-* `verify()`, validate data, if data is invalid then throw exception.
+File `schema/uint.json` - unsigned integer
 
-# Documents
+```json
+{
+    "$id": "//org/uint",
+    "type": "integer",
+    "minimum": 0
+}
+```
+
+**Step 2. Re-use Basic Schemas**
+
+File `schema/hero.json` - a hero
+
+```json
+{
+    "$id": "//org/hero",
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["name", "strength"],
+    "properties": {
+        "name": {"$ref": "//org/name"},
+        "strength": {"$ref": "//org/uint"}
+    }
+}
+```
+
+**Step 3. Verify Data**
+
+File `main.js`
+
+```js
+const path = require('path')
+const {DataFlow} = require('@trop/dflow')
+
+let dir = path.join(__dirname, 'schema')
+let flow = new DataFlow([dir])
+
+let id = '//org/hero'
+let data = {
+    name: 'hulk',
+    strength: 69
+}
+let error = flow.verify('//org/hero', data)
+```
+
+* `dir`, path to directory contains schema files
+* `id`, identity of schema, correspond with `$id` keyword
+* `data`, data to be verify
+* `verify()`, validate data follow schema identity
+* `error`, if data is invalid then return an array contains errors
+
+# References
 
 * [Changelog](changelog.md)
 * [Contribution](contribution.md)
 * [APIs](doc/api.md)
 * [Development](doc/dev.md)
+* [JSON Schema](https://json-schema.org/)

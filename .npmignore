@@ -1,8 +1,9 @@
 /dist
 /dest
+/doc
+/test
 /tmp
 /node_modules
-/test
 package-lock.json
 *.swp
 *.swo
