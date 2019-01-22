@@ -1,6 +1,6 @@
 {
   "name": "@trop/dflow",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Data Modeling Tool",
   "main": "lib/index.js",
   "scripts": {
