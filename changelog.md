@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.4.0
+
+* Fix load non JSON files
+* Use "JSON.parse()" instead of "require()"
+
 ## v0.3.0
 
 * On input schema ID does not exist, throw `IdentityError`
