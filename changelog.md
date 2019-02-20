@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.4.1
+
+* Throw more detail information on invalid JSON files
+
 ## v0.4.0
 
 * Fix load non JSON files
