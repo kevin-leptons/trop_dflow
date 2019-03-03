@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.5.0
+
+* Default argument `dirs` of `DataFlow()` set to empty Array
+* Add option `conf` to `DataFlow()`
+* Add built-in schemas `//atom/*`
+
 ## v0.4.1
 
 * Throw more detail information on invalid JSON files

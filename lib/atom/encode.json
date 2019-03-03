@@ -1,0 +1,27 @@
+[
+    {
+        "$id": "//atom/base64",
+        "type": "string",
+        "pattern": "^[a-zA-Z0-9+/]+=?$"
+    },
+    {
+        "$id": "//atom/base64url",
+        "type": "string",
+        "pattern": "^[a-zA-Z0-9-_]+=?$"
+    },
+    {
+        "$id": "//atom/base32",
+        "type": "string",
+        "pattern": "^[A-Z2-7]+=?$"
+    },
+    {
+        "$id": "//atom/base32hex",
+        "type": "string",
+        "pattern": "^[A-V0-9]+=?$"
+    },
+    {
+        "$id": "//atom/base16",
+        "type": "string",
+        "pattern": "^[A-F0-9]+$"
+    }
+]

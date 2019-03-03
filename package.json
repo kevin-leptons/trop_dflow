@@ -1,10 +1,10 @@
 {
   "name": "@trop/dflow",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "description": "Data Modeling Tool",
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha test/"
+    "test": "mocha --recursive test/"
   },
   "repository": {
     "type": "git",

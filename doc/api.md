@@ -4,11 +4,13 @@
 const {DataFlow} = require('@trop/dflow')
 ```
 
-## constructor(dirs)
+## constructor(dirs=[], conf={atom: true})
 
 **input**
 
-* `dirs` / `Array<string>`. List of path to schema directories.
+* `dirs` / `Array<String>` / [] - List of path to schema directories.
+* `conf` / `Object` / {}
+* `conf.atom` / `Boolean` / true - Load built-in atom schemas
 
 ## verify(id, data)
 

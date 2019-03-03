@@ -1,0 +1,5 @@
+{
+    "$id": "//atom/uuid",
+    "type": "string",
+    "pattern": "^[a-zA-Z0-9]{8}(-[a-zA-Z0-9]{4}){3}-[a-zA-Z0-9]{12}$"
+}

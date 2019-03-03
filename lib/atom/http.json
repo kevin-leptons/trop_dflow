@@ -1,0 +1,347 @@
+[
+    {
+        "$id": "//atom/http/get",
+        "type": "string",
+        "const": "get"
+    },
+    {
+        "$id": "//atom/http/post",
+        "type": "string",
+        "const": "post"
+    },
+    {
+        "$id": "//atom/http/put",
+        "type": "string",
+        "const": "put"
+    },
+    {
+        "$id": "//atom/http/patch",
+        "type": "string",
+        "const": "patch"
+    },
+    {
+        "$id": "//atom/http/delete",
+        "type": "string",
+        "const": "delete"
+    },
+    {
+        "$id": "//atom/http/option",
+        "type": "string",
+        "const": "option"
+    },
+    {
+        "$id": "//atom/http/100",
+        "type": "integer",
+        "const": 100
+    },
+    {
+        "$id": "//atom/http/101",
+        "type": "integer",
+        "const": 101
+    },
+    {
+        "$id": "//atom/http/102",
+        "type": "integer",
+        "const": 102
+    },
+    {
+        "$id": "//atom/http/200",
+        "type": "integer",
+        "const": 200
+    },
+    {
+        "$id": "//atom/http/201",
+        "type": "integer",
+        "const": 201
+    },
+    {
+        "$id": "//atom/http/202",
+        "type": "integer",
+        "const": 202
+    },
+    {
+        "$id": "//atom/http/203",
+        "type": "integer",
+        "const": 203
+    },
+    {
+        "$id": "//atom/http/204",
+        "type": "integer",
+        "const": 204
+    },
+    {
+        "$id": "//atom/http/205",
+        "type": "integer",
+        "const": 205
+    },
+    {
+        "$id": "//atom/http/206",
+        "type": "integer",
+        "const": 206
+    },
+    {
+        "$id": "//atom/http/207",
+        "type": "integer",
+        "const": 207
+    },
+    {
+        "$id": "//atom/http/208",
+        "type": "integer",
+        "const": 208
+    },
+    {
+        "$id": "//atom/http/226",
+        "type": "integer",
+        "const": 226
+    },
+    {
+        "$id": "//atom/http/300",
+        "type": "integer",
+        "const": 300
+    },
+    {
+        "$id": "//atom/http/301",
+        "type": "integer",
+        "const": 301
+    },
+    {
+        "$id": "//atom/http/302",
+        "type": "integer",
+        "const": 302
+    },
+    {
+        "$id": "//atom/http/303",
+        "type": "integer",
+        "const": 303
+    },
+    {
+        "$id": "//atom/http/304",
+        "type": "integer",
+        "const": 304
+    },
+    {
+        "$id": "//atom/http/305",
+        "type": "integer",
+        "const": 305
+    },
+    {
+        "$id": "//atom/http/307",
+        "type": "integer",
+        "const": 307
+    },
+    {
+        "$id": "//atom/http/308",
+        "type": "integer",
+        "const": 308
+    },
+    {
+        "$id": "//atom/http/400",
+        "type": "integer",
+        "const": 400
+    },
+    {
+        "$id": "//atom/http/401",
+        "type": "integer",
+        "const": 401
+    },
+    {
+        "$id": "//atom/http/402",
+        "type": "integer",
+        "const": 402
+    },
+    {
+        "$id": "//atom/http/403",
+        "type": "integer",
+        "const": 403
+    },
+    {
+        "$id": "//atom/http/404",
+        "type": "integer",
+        "const": 404
+    },
+    {
+        "$id": "//atom/http/405",
+        "type": "integer",
+        "const": 405
+    },
+    {
+        "$id": "//atom/http/406",
+        "type": "integer",
+        "const": 406
+    },
+    {
+        "$id": "//atom/http/407",
+        "type": "integer",
+        "const": 407
+    },
+    {
+        "$id": "//atom/http/408",
+        "type": "integer",
+        "const": 408
+    },
+    {
+        "$id": "//atom/http/409",
+        "type": "integer",
+        "const": 409
+    },
+    {
+        "$id": "//atom/http/410",
+        "type": "integer",
+        "const": 410
+    },
+    {
+        "$id": "//atom/http/411",
+        "type": "integer",
+        "const": 411
+    },
+    {
+        "$id": "//atom/http/412",
+        "type": "integer",
+        "const": 412
+    },
+    {
+        "$id": "//atom/http/413",
+        "type": "integer",
+        "const": 413
+    },
+    {
+        "$id": "//atom/http/414",
+        "type": "integer",
+        "const": 414
+    },
+    {
+        "$id": "//atom/http/415",
+        "type": "integer",
+        "const": 415
+    },
+    {
+        "$id": "//atom/http/416",
+        "type": "integer",
+        "const": 416
+    },
+    {
+        "$id": "//atom/http/417",
+        "type": "integer",
+        "const": 417
+    },
+    {
+        "$id": "//atom/http/418",
+        "type": "integer",
+        "const": 418
+    },
+    {
+        "$id": "//atom/http/421",
+        "type": "integer",
+        "const": 421
+    },
+    {
+        "$id": "//atom/http/422",
+        "type": "integer",
+        "const": 422
+    },
+    {
+        "$id": "//atom/http/423",
+        "type": "integer",
+        "const": 423
+    },
+    {
+        "$id": "//atom/http/424",
+        "type": "integer",
+        "const": 424
+    },
+    {
+        "$id": "//atom/http/426",
+        "type": "integer",
+        "const": 426
+    },
+    {
+        "$id": "//atom/http/428",
+        "type": "integer",
+        "const": 428
+    },
+    {
+        "$id": "//atom/http/429",
+        "type": "integer",
+        "const": 429
+    },
+    {
+        "$id": "//atom/http/431",
+        "type": "integer",
+        "const": 431
+    },
+    {
+        "$id": "//atom/http/444",
+        "type": "integer",
+        "const": 444
+    },
+    {
+        "$id": "//atom/http/451",
+        "type": "integer",
+        "const": 451
+    },
+    {
+        "$id": "//atom/http/499",
+        "type": "integer",
+        "const": 499
+    },
+    {
+        "$id": "//atom/http/500",
+        "type": "integer",
+        "const": 500
+    },
+    {
+        "$id": "//atom/http/501",
+        "type": "integer",
+        "const": 501
+    },
+    {
+        "$id": "//atom/http/502",
+        "type": "integer",
+        "const": 502
+    },
+    {
+        "$id": "//atom/http/503",
+        "type": "integer",
+        "const": 503
+    },
+    {
+        "$id": "//atom/http/504",
+        "type": "integer",
+        "const": 504
+    },
+    {
+        "$id": "//atom/http/505",
+        "type": "integer",
+        "const": 505
+    },
+    {
+        "$id": "//atom/http/506",
+        "type": "integer",
+        "const": 506
+    },
+    {
+        "$id": "//atom/http/507",
+        "type": "integer",
+        "const": 507
+    },
+    {
+        "$id": "//atom/http/508",
+        "type": "integer",
+        "const": 508
+    },
+    {
+        "$id": "//atom/http/510",
+        "type": "integer",
+        "const": 510
+    },
+    {
+        "$id": "//atom/http/511",
+        "type": "integer",
+        "const": 511
+    },
+    {
+        "$id": "//atom/http/599",
+        "type": "integer",
+        "const": 599
+    }
+]

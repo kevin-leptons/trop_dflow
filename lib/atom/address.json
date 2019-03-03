@@ -1,0 +1,16 @@
+[
+    {
+        "$id": "//atom/email",
+        "type": "string",
+        "format": "email"
+    },
+    {
+        "$id": "//atom/ipv4",
+        "type": "string",
+        "format": "ipv4"
+    },
+    {
+        "$id": "//atom/ipv6",
+        "format": "ipv6"
+    }
+]

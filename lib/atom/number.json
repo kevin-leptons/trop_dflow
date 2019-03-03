@@ -1,0 +1,40 @@
+[
+    {
+        "$id": "//atom/int",
+        "type": "integer"
+    },
+    {
+        "$id": "//atom/uint",
+        "type": "integer",
+        "minimum": 0
+    },
+    {
+        "$id": "//atom/pint",
+        "type": "integer",
+        "minimum": 1
+    },
+    {
+        "$id": "//atom/nint",
+        "type": "integer",
+        "maximum": -1
+    },
+    {
+        "$id": "//atom/float",
+        "type": "number"
+    },
+    {
+        "$id": "//atom/ufloat",
+        "type": "number",
+        "minimum": 0
+    },
+    {
+        "$id": "//atom/pfloat",
+        "type": "number",
+        "exclusiveMinimum": 0
+    },
+    {
+        "$id": "//atom/nfloat",
+        "type": "number",
+        "exclusiveMaximum": 0
+    }
+]
