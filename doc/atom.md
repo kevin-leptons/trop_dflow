@@ -18,8 +18,10 @@
   RFC 2673, section 3.2
 * `//atom/ipv6` - texual representation for Internet Address version 6,
   RFC 2373, section 2.2
-* `//atom/http/METHOD`, RFC 7231, section 4
-* `//atom/http/STATUS`, RFC 7231, section 6
+* `//atom/http/METHOD`, RFC 7231, section 4, where `METHOD` is one of
+  `GET`, `POST`, `PUT`, `PATCH`, `DELETE`, `OPTION`
+* `//atom/http/STATUS`, RFC 7231, section 6, where `STATUS` is in range
+  `[100, 599]`; few values is not meaning, see RFC 7231 for detail
 * `//atom/jwt` - JSON Web Token String, RFC 7519
 * `//atom/datetime` - date and time string, RFC 3339
 * `//atom/base64` - encoded bits, RFC 4648, section 4
