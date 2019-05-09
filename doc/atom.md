@@ -33,6 +33,8 @@
 
 ## Non Standarlization
 
+* `//atom/date` - Date string like `2019-01-01`
+* `//atom/time` - Time string like `03:04:05+00:00`
 * `//atom/timestamp` - UNIX timestamp
 * `//atom/object_id` - ObjectId, MongoDB
 * `//atom/bcrypt_2abxy` -  Blowfish Cipher, version 2a, 2b, 2x and 2y

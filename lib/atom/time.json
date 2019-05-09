@@ -5,6 +5,16 @@
         "format": "date-time"
     },
     {
+        "$id": "//atom/date",
+        "type": "string",
+        "format": "date"
+    },
+    {
+        "$id": "//atom/time",
+        "type": "string",
+        "format": "time"
+    },
+    {
         "$id": "//atom/timestamp",
         "type": "integer",
         "minimum": 0,

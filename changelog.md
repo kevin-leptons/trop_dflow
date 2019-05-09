@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.6.0
+
+* Add `//atom/date` and `//atom/time`
+
 ## 0.5.0
 
 * Default argument `dirs` of `DataFlow()` set to empty Array
