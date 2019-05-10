@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.7.0
+
+* Add `//atom/phone_number`
+
 ## v0.6.0
 
 * Add `//atom/date` and `//atom/time`
