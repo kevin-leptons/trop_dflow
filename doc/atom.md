@@ -38,3 +38,8 @@
 * `//atom/timestamp` - UNIX timestamp
 * `//atom/object_id` - ObjectId, MongoDB
 * `//atom/bcrypt_2abxy` -  Blowfish Cipher, version 2a, 2b, 2x and 2y
+* `//atom/phone_number` - Variant of E.164 standard. This schema does not
+  ensures that provided string is correct phone number because limitation of
+  Regular Expression. It just ensure that provided string start with
+  symbol `+`, has space between country code and subscriber number,
+  has both country code and subscriber and has 15 digits at maximum.
