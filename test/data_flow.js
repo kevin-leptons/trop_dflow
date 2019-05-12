@@ -21,6 +21,21 @@ describe('class DataFlow', () => {
         })
     })
 
+    it('get existed schema', () => {
+        let schema = flow.get('//atom/int')
+
+        assert.notEqual(schema, null)
+        assert.equal(typeof schema, 'object')
+        assert.equal(schema.$id, '//atom/int')
+        assert.equal(schema.type, 'integer')
+    })
+
+    it('get not existed schema', () => {
+        let schema = flow.get('//atom/abc')
+
+        assert.equal(schema, undefined)
+    })
+
     it('verify(personal)', () => {
         let e = flow.verify('//trop/front/personal', {
             name: 'kevin',

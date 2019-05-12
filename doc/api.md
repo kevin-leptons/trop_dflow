@@ -6,20 +6,23 @@ const {DataFlow} = require('@trop/dflow')
 
 ## constructor(dirs=[], conf={atom: true})
 
-**input**
-
-* `dirs` / `Array<String>` / [] - List of path to schema directories.
-* `conf` / `Object` / {}
-* `conf.atom` / `Boolean` / true - Load built-in atom schemas
+* `dirs` / `Array<String>` / `[]` - List of path to schema directories.
+* `conf` / `Object` / `{}`
+* `conf.atom` / `Boolean` / `true` - Load built-in atom schemas
 
 ## verify(id, data)
 
-**input**
+* Input
+    * `name` / `string`. Identity of schema, follow `$id` in JSON Schema.
+    * `item` / `any`. Data item to verify.
+* Output
+    * `undefined` - Data is valid
+    * `Array<Object>` Data is invalid
 
-* `name` / `string`. Identity of schema, follow `$id` in JSON Schema.
-* `item` / `any`. Data item to verify.
+## get(id)
 
-**output**
-
-* `undefined` on valid data
-* `Array<Object>` on invalid data
+* Input
+    * `id` / `String` - Identity of schema
+* Output
+    * `Object` - JSON schema
+    * `undefined` - Schema does not exists

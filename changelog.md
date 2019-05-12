@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.8.0
+
+* Add `DataFlow.get()` - Retrieve schema
+
 ## v0.7.0
 
 * Add `//atom/phone_number`
